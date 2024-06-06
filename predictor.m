@@ -88,7 +88,6 @@ for i = 1:size(segments, 1)
     end
 end
 
-display(paraula)
 palabra = jaccard(char(paraula));
 
 end
