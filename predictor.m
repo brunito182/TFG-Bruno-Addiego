@@ -28,8 +28,8 @@ for i = 1:size(segments, 1)
     durada_segment = (end_idx - start_idx + 1);
     
     % Ajustar el tamaño de la ventana dinámicamente según la duración del segmento
-    finestra = round(durada_segment*0.3);  % Ajusta este factor según sea necesario
-    overlap = round(finestra * 0.5);  % Superposición del 10%
+    finestra = round(durada_segment*0.3);  % Factor del 30% de la mida del segment
+    overlap = round(finestra * 0.5);  % Superposició del 50%
     pas = finestra - overlap;
 
     ham = hamming(finestra);
