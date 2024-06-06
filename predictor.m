@@ -24,10 +24,10 @@ for i = 1:size(segments, 1)
     start_idx = segments(i, 1);
     end_idx = segments(i, 2);
     
-    % Calcular la duración del segmento de habla
+    % Es calcula la durada del segment on hi ha veu
     durada_segment = (end_idx - start_idx + 1);
     
-    % Ajustar el tamaño de la ventana dinámicamente según la duración del segmento
+    % Ajusta la mida de la finestra segons la mida del segment
     finestra = round(durada_segment*0.3);  % Factor del 30% de la mida del segment
     overlap = round(finestra * 0.5);  % Superposició del 50%
     pas = finestra - overlap;
